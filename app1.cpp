@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 
-static int some_function(bool in, bool in2) {
+static int some_function_app1(bool in, bool in2) {
   if (in && in2) {
     return 0;
   } else {
@@ -22,10 +22,10 @@ int main() {
   sig(42);
 
   try {
-    some_function(true, true);
-    some_function(true, false);
+    some_function_app1(true, true);
+    some_function_app1(true, false);
   } catch (int e) {
-    std::cout << "Caught exception: " << e;
+    std::cout << "Caught exception: " << e << std::endl;
   }
 
   std::string one_string{"abc"};
